@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - HTML5 Video Player + Playlist　有樣式+Res（推薦）</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Video_Player -->
+<!--
+		<link href="css/video_player.css" rel="stylesheet">
+注意，如果放在伺服器上，片源可能（跟架站點有關）會發生無法讀取的現象
+原因為與跨站點資源關聯的cookie
+Chrome瀏覽器80版本（2020/02/17）後因其Cookie政策更改（禁止非法讀取第三方Cookie）
+
+新規則為，僅 SameSite=None; Secure 的第三方Cookie才能被Chrome發送給服務器
+第三方服務想讀取第三方Cookie，需要滿足兩點
+1.種Cookie時需如下聲明
+Set-Cookie: my_cookie=abc123; SameSite=None; Secure
+2.讀取Cookie接收的網路URL必須是HTTPS
+
+-->
+<!--Video Player-->
+						<div id="video_player" class="video_player">
+							<div class="video_box">
+								<video controls>
+									<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
+									<source src=".webm" type="video/mp4">      
+								</video>
+							</div>
+							<div class="video_playlist">
+								<ul>
+									<li><a href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4">
+										<img src="https://i.imgur.com/2VJAK8L.jpg">
+										<div class="title">Play 1</div>
+										<div class="time">00:05:00</div>        
+									</a></li>
+									<li><a href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4">
+										<img src="https://i.imgur.com/2VJAK8L.jpg">
+										<div class="title">Play 2</div>
+										<div class="time">00:03:00</div>        
+									</a></li>
+									<li><a href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4">
+										<img src="https://i.imgur.com/2VJAK8L.jpg">
+										<div class="title">Play 3</div>
+										<div class="time">00:08:00</div>        
+									</a></li>
+									<li><a href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4">
+										<img src="https://i.imgur.com/2VJAK8L.jpg">
+										<div class="title">Play 4</div>
+										<div class="time">00:02:00</div>        
+									</a></li>
+									<li><a href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4">
+										<img src="https://i.imgur.com/2VJAK8L.jpg">
+										<div class="title">Play 5</div>
+										<div class="time">00:07:00</div>        
+									</a></li>
+								</ul>
+							</div>
+						</div>
+						<!--Video Player JS-->
+						<!--<script src="js/video_player.js"></script>-->
+						<!--End Video Player-->
+https://youtu.be/bk-yXDASJic?list=RDbk-yXDASJic
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
