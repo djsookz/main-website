@@ -220,7 +220,7 @@ blockquote {
   position: relative;
 }
 blockquote:before {
-  font-family: Font awesome\5 Pro;
+  font-family: Font awesome\ 5 Pro;
   content: "\f10e";
   position: absolute;
   color: #ccc;
@@ -587,7 +587,7 @@ header.main-header:before {
   background: rgba(255, 255, 255, 0.051);
 }
 .element:before {
-  font-family: Font awesome\5 Pro;
+  font-family: Font awesome\ 5 Pro;
   content: "\f00d";
   color: #fff;
   position: relative;
@@ -664,12 +664,12 @@ nav.nav-inner {
   top: 3px;
 }
 .sliding-menu a.back:before {
-  font-family: Font awesome\5 Pro;
+  font-family: Font awesome\ 5 Pro;
   content: "\f104";
   color: #fff;
 }
 .submen-dec:before {
-  font-family: Font awesome\5 Pro;
+  font-family: Font awesome\ 5 Pro;
   content: "\f067";
   position: absolute;
   right: 0;
@@ -3857,7 +3857,7 @@ section.hero-section .fs-canvas {
   position: relative;
 }
 .custom-form .sel-dec .selectbox .select:before {
-  font-family: Font awesome\5 Pro;
+  font-family: Font awesome\ 5 Pro;
   content: "\f142";
   position: absolute;
   top: 50px;
